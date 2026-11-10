@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Памятник Кёнигсбергскому сому | Калининград</title>
+    <meta name="description" content="История и легенда памятника Кёнигсбергскому сому в Калининграде. Фото, адрес, интересные факты.">
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ваш CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo__icon">🐟</span>
+                Кёнигсбергский сом
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#history" class="nav__link">История</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="#facts" class="nav__link">Факты</a></li>
+                    <li class="nav__item"><a href="#map" class="nav__link">Где найти</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Памятник <br>Кёнигсбергскому <span class="hero__highlight">сому</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Легенда старого города, бронзовый страж набережной 
+                    и один из самых уютных символов Калининграда
+                </p>
+                <button class="btn btn--fun" id="btn-feed">🐟 Покормить сома</button>
+                <div id="feeding-message" style="display:none;">Сом довольно шевелит усами! 🐟💦</div>
+            </div>
+            <div class="hero__image-wrapper">
+                <img 
+                    src="https://avatars.mds.yandex.net/get-altay/10766931/2a00000192ca6b8b0aed2a80a948adad0f9a/XXXL" 
+                    alt="Памятник Кёнигсбергскому сому в Калининграде" 
+                    class="hero__image"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "История" -->
+    <section class="history" id="history">
+        <div class="container">
+            <h2 class="section-title">История памятника</h2>
+            <div class="history__grid">
+                <div class="history__text">
+                    <p>Памятник был установлен в 2018 году на набережной Нижнего пруда. 
+                    Автор скульптуры — калининградский художник Андрей Шевченко.</p>
+                    <p>Сом — не случайный персонаж. В довоенном Кёнигсберге в Нижнем пруду 
+                    действительно водились огромные сомы. По легенде, один из них достигал 
+                    размеров почти 2 метра и стал местной знаменитостью.</p>
+                    <p>Скульптура изображает именно того самого легендарного сома, 
+                    который словно выпрыгивает из воды. На его теле можно заметить 
+                    клеймо с гербом Кёнигсберга.</p>
+                </div>
+                <div class="history__image">
+                    <img src="https://assets3.klops.ru/media/W1siZiIsIjIwMjQvMTAvMjcvZjJkMTQ2NmItN2I4OS00ZTRlLTk3MGEtNThiYzU4NDE1Y2ZjX2ZpbGUuanBlZyJdLFsicCIsInRodW1iIiwiMTU4Mng4MzErMCsxMTYiXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjMwIyJdLFsicCIsInRleHQiLCIiXSxbInAiLCJlbmNvZGUiLCJqcGciLCItc3RyaXAgLWludGVybGFjZSBQbGFuZSJdXQ/file.jpg?sha=1d4247231920b21a" alt="Историческое фото Нижнего пруда">
+                    <p class="history__caption">Нижний пруд в довоенном Кёнигсберге</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция карусели -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <h2 class="section-title">Фотогалерея</h2>
+        
+        <div class="carousel-wrapper" id="carousel">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://avatars.mds.yandex.net/get-altay/6200226/2a00000182d04534e69790894c27072f101d/XXL_height" alt="фото под карусель 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1f/96/43/6d/caption.jpg?w=1200&h=1200&s=1" alt="фото под карусель 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/9716076/pub_646ce2c9f468f346d6b81063_646ce43ff468f346d6bac8f3/scale_2400" alt="фото под карусель 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://avatars.mds.yandex.net/get-altay/10766931/2a00000192ca6b8b0aed2a80a948adad0f9a/XXXL" alt="фото под карусель 4">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://avatars.mds.yandex.net/get-altay/4961567/2a00000182d045724c5376ebb2fef0098ad8/XXXL" alt="фото под карусель 5">
+                </div>
+
+            </div>
+            
+            <!-- Кнопки -->
+            <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Предыдущий слайд">&#10094;</button>
+            <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Следующий слайд">&#10095;</button>
+        </div>
+        
+        <!-- Точки-индикаторы -->
+        <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+</section>
+<!-- секция баяна -->
+<section class="legend" id="legend">
+    <div class="container">
+        <h2 class="section-title">Легенда старого Кёнигсберга</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <button class="accordion__header">
+                    📖 Легенда о гигантском соме
+                    <span class="accordion__arrow">▼</span>
+                </button>
+                <div class="accordion__content">
+                    <p>В довоенном Кёнигсберге ходила легенда о гигантском соме, 
+                    который жил в Нижнем пруду. Говорили, что он был размером 
+                    с небольшую лодку и мог утащить под воду зазевавшегося рыбака. 
+                    Местные жители называли его «Старый Ганс».</p>
+                    <p>Якобы во время бомбардировок 1944 года сом исчез — то ли погиб, 
+                    то ли уплыл по подземным каналам в Преголю. Но старожилы уверяют, 
+                    что иногда на закате можно увидеть огромную тень под водой...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Секция "Интересные факты" -->
+    <section class="facts" id="facts">
+        <div class="container">
+            <h2 class="section-title">Это интересно</h2>
+            <div class="facts__cards">
+                <div class="fact-card">
+                    <div class="fact-card__icon">📏</div>
+                    <h3 class="fact-card__title">Бронзовый гигант</h3>
+                    <p class="fact-card__text">Скульптура весит около 200 кг и достигает 2,5 метров в длину вместе с хвостом.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-card__icon">🏛️</div>
+                    <h3 class="fact-card__title">Клеймо Кёнигсберга</h3>
+                    <p class="fact-card__text">На боку сома — оттиск исторического герба Кёнигсберга, который можно потереть на удачу.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-card__icon">🌊</div>
+                    <h3 class="fact-card__title">Нижний пруд</h3>
+                    <p class="fact-card__text">Водоём был создан ещё рыцарями Тевтонского ордена в XIII веке как запруда.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Где найти" -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title">Как добраться</h2>
+            <div class="map-section__content">
+                <div class="map-section__info">
+                    <p><strong>Адрес:</strong> Калининград, набережная Нижнего пруда (со стороны ул. Черняховского)</p>
+                    <p><strong>Координаты:</strong> 54.7195° N, 20.5142° E</p>
+                    <p>Ближайшие ориентиры — Дом Советов, музей «Фридландские ворота». 
+                    Сом сидит у самой воды, заметить его несложно.</p>
+                </div>
+                <div class="map-section__preview">
+                    <button class="btn btn--secondary" id="btn-open-map">
+                        Открыть в Яндекс.Картах
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2026 Памятник Кёнигсбергскому сому. Неофициальный сайт, сделанный руками дилетанта для защиты предмета.</p>
+            <p class="footer__text">Фото и информация взяты из открытых источников и не нарушают никакие авторские права (я надеюсь).</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
